@@ -1,8 +1,22 @@
-var add = function(number1, number2){
-  return number1 + number2;
-};
+$(function() {
+  var operator = $("input.operator").click(function() {
+    operator =  $(this).val();
+  });
+  $("form#calculator").submit(function(event) {
+    var firstNumber = parseInt($("input#firstNumber").val());
+    var secondNumber = parseInt($("input#secondNumber").val());
 
-var number1 =  parseInt(prompt("Enter a number;"));
-var number2 =  parseInt(prompt("Enter another number:"));
+     if(operator === "+") {
+        alert(firstNumber + secondNumber)
+      } else if(operator === "-") {
+        alert(firstNumber - secondNumber)
+      } else if(operator === "*") {
+        alert(firstNumber * secondNumber)
+      } else if(operator === "/") {
+        alert(firstNumber / secondNumber)
+      };
 
-alert(add(number1,number2));
+
+    event.preventDefault();
+  });
+});
