@@ -10,8 +10,6 @@
   </head>
   <body>
     <div class="container">
-
-
       <div id="calculator-page">
         <button id="cooking-button" type="button" class="btn btn-info">Cooking Converter</button>
         <h1>Calculator</h1>
@@ -20,10 +18,12 @@
             <label for="firstNumber">1st number</label>
             <input id="firstNumber" class="form-control" type="text">
           </div>
-          <input class="operator" id="add" type="button" value="+"></input>
-          <input class="operator" id="subtract" type="button" value="-"></input>
-          <input class="operator" id="multiply" type="button" value="*"></input>
-          <input class="operator" id="divide" type="button" value="/"></input>
+          <div class="operatorcontainer text-center">
+            <input class="operator" id="add" type="button" value="+"></input>
+            <input class="operator" id="subtract" type="button" value="-"></input>
+            <input class="operator" id="multiply" type="button" value="*"></input>
+            <input class="operator" id="divide" type="button" value="/"></input>
+          </div>
           <div class="form-group">
             <label for="secondNumber">2nd number</label>
             <input id="secondNumber" class="form-control" type="text">
@@ -45,7 +45,6 @@
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
           <div id="liters">
-
           </div>
         </div>
         <div id="cups-to-tablespoons">
@@ -57,9 +56,7 @@
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
           <div id="tablespoons">
-
           </div>
-
         </div>
         <div id="pints-to-ounces">
           <form id="cooking-pints">
@@ -70,9 +67,13 @@
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
           <div id="ounces">
-
           </div>
         </div>
+      </div>
+      <div class="form-group text-center" id="colorcontainer">
+        <label for="color">Change your background</label>
+        <input type="color" id="color" class="form-control">
+        <button type="submit" class="btn btn-info" id="colorbutton">Change Color</button>
       </div>
     </div>
   </body>

@@ -6,6 +6,7 @@ $(function() {
 
   var calculate = function(firstNumber, secondNumber) {
     if(operator === "+") {
+
       result = (firstNumber + secondNumber);
     } else if(operator === "-") {
       result = (firstNumber - secondNumber);
@@ -72,11 +73,10 @@ $(function() {
     $("div#calculator-page").fadeToggle(1000);
     $("div#cooking-page").hide();
   });
-});
 
-$(function() {
-  $("input.calcButton").click(function() {
-    var input = $(this).val();
-    $("#calcscreen").append(input);
-  });
+  $("#colorbutton").click(function() {
+    var favoriteColor = $("input#color").val();
+    $("body").css("background-color", favoriteColor);
+  })
+
 });

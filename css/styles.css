@@ -1,24 +1,53 @@
-#calculatorUI {
-  border: 2px solid black;
-  border-radius: 10px;
-}
+
 
 #cooking-page {
   display: none;
 }
 
-#calcscreen {
-  height: 150px;
-  border: 1px solid bqlue;
-  background-color: lightblue;
-  font-size: 5em;
-  text-align: right;
+#calc-result, #liters, #tablespoons, #ounces {
+  font-size: 3em;
+  font-family: monospace;
+  border: 1px solid lightgray;
+  min-width: 100%;
+  min-height: 70px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #002244;
+  color: #00FF00;
+  font-family: monospace;
+  padding-left: 20px;
 }
 
-input.col-sm-3, input.col-sm-9, input.col-sm-12 {
-  border: 1px solid blue;
-  height: 100px;
+#color {
+  min-width: 75px;
+  width: 10%;
+  min-height: 75px;
+  margin: 0 auto;
+}
+
+#colorcontainer {
+  margin-top: 50px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+input {
+  height: 75px;
+  width: 75px;
   font-size: 3em;
-  padding: 0;
+  background-color: #DDEEFF;
+  border: none;
+  border-radius: 10px;
+}
+
+input:hover {
+  background-color: #CCDDEE;
+}
+
+
+
+#colorbutton {
+  margin-top: 10px;
 
 }
