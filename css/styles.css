@@ -1,0 +1,24 @@
+#calculatorUI {
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+#cooking-page {
+  display: none;
+}
+
+#calcscreen {
+  height: 150px;
+  border: 1px solid bqlue;
+  background-color: lightblue;
+  font-size: 5em;
+  text-align: right;
+}
+
+input.col-sm-3, input.col-sm-9, input.col-sm-12 {
+  border: 1px solid blue;
+  height: 100px;
+  font-size: 3em;
+  padding: 0;
+
+}

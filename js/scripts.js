@@ -1,5 +1,5 @@
 $(function() {
-  var gallons, liters, firstNumber, secondNumber, result;
+  var liters, firstNumber, secondNumber, result, tablespoons, ounces;
   var operator = $("input.operator").click(function() {
     operator =  $(this).val();
   });
@@ -18,8 +18,15 @@ $(function() {
 
   var galsToLiters = function(gallons) {
     liters = (gallons * 3.78541);
-  }
+  };
 
+  var cupsToTablespoons = function(cups) {
+    tablespoons = (cups * 16);
+  };
+
+  var pintsToOunces = function(pints) {
+    ounces = (pints * 16);
+  };
 // begin front end logic
 
   $("form#calculator").submit(function(event) {
@@ -31,12 +38,45 @@ $(function() {
     event.preventDefault();
   });
 
-  $("form#cooking-gallons").submit(function(event){
+  $("form#cooking-gallons").submit(function(event) {
     var gallons = parseInt($("input#gallons").val());
     galsToLiters(gallons);
     $("div#liters").text(liters + " liters");
 
 
     event.preventDefault();
-  })
+  });
+
+  $("form#cooking-cups").submit(function(event) {
+    var cups = parseInt($("input#cups").val());
+    cupsToTablespoons(cups);
+    $("div#tablespoons").text(tablespoons + " tablespoons");
+
+    event.preventDefault();
+  });
+
+  $("form#cooking-pints").submit(function(event) {
+    var pints = parseInt($("input#pints").val());
+    pintsToOunces(pints);
+    $("div#ounces").text(ounces + " ounces");
+
+    event.preventDefault();
+  });
+
+  $("button#cooking-button").click(function(){
+    $("div#calculator-page").hide();
+    $("div#cooking-page").fadeToggle(1000);
+  });
+
+  $("button#calc-button").click(function(){
+    $("div#calculator-page").fadeToggle(1000);
+    $("div#cooking-page").hide();
+  });
+});
+
+$(function() {
+  $("input.calcButton").click(function() {
+    var input = $(this).val();
+    $("#calcscreen").append(input);
+  });
 });
