@@ -66,17 +66,35 @@ $(function() {
 
   $("button#cooking-button").click(function(){
     $("div#calculator-page").hide();
+    $("div#shop-page").hide();
     $("div#cooking-page").fadeToggle(1000);
   });
 
   $("button#calc-button").click(function(){
     $("div#calculator-page").fadeToggle(1000);
+    $("div#shop-page").hide();
+    $("div#cooking-page").hide();
+  });
+
+  $("button#shop-button").click(function(){
+    $("div#calculator-page").hide();
+    $("div#shop-page").fadeToggle(1000);
     $("div#cooking-page").hide();
   });
 
   $("#colorbutton").click(function() {
     var favoriteColor = $("input#color").val();
     $("body").css("background-color", favoriteColor);
+  })
+
+  $("form#shop").submit(function(event) {
+    $("#receipt").show();
+    $(".showname").text($("input#name").val());
+    $("#showaddress").text($("input#address").val());
+    $("#showcity").text($("input#city").val());
+    $("#showstatezip").text($("input#statezip").val());
+
+    event.preventDefault();
   })
 
 });

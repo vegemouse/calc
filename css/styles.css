@@ -1,6 +1,22 @@
+#receipt {
+  display: none;
+  background-image: url("../img/receipt.png");
+  background-position: top left;
+  background-size: cover;
+  border-radius: 5px;
+  padding: 100px 50px;
+  font-family: monospace;
+  min-height: 300px;
+  font-size: 1.5em;
+  color: #777;
 
+}
 
-#cooking-page {
+#receiptaddress {
+  padding: 10px;
+}
+
+#cooking-page, #shop-page {
   display: none;
 }
 

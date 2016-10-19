@@ -12,6 +12,7 @@
     <div class="container">
       <div id="calculator-page">
         <button id="cooking-button" type="button" class="btn btn-info">Cooking Converter</button>
+        <button id="shop-button" type="button" class="btn btn-info">Buy our Merch!</button>
         <h1>Calculator</h1>
         <form id="calculator">
           <div class="form-group">
@@ -35,6 +36,7 @@
       </div>
       <div id="cooking-page">
         <button id="calc-button"type="button" class="btn btn-info">Calculator</button>
+        <button id="shop-button" type="button" class="btn btn-info">Buy our Merch!</button>
         <h1>Convert Cooking Measurements</h1>
         <div id="gallons-to-liters">
           <form id="cooking-gallons">
@@ -67,6 +69,40 @@
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
           <div id="ounces">
+          </div>
+        </div>
+      </div>
+      <div id="shop-page">
+        <button id="calc-button"type="button" class="btn btn-info">Calculator</button>
+        <button id="cooking-button" type="button" class="btn btn-info">Cooking Converter</button>
+        <h1>Buy our Stuff!</h1>
+        <form id="shop">
+          <div class="form-group">
+            <label for="name">Full name: </label>
+            <input id="name" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="address">Street: </label>
+            <input id="address" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="city">City: </label>
+            <input id="city" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="statezip">State and Zip: </label>
+            <input id="statezip" class="form-control" type="text">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit
+          </button>
+        </form>
+        <div id="receipt">
+          Hello, <span class="showname"></span>. You're order has been shipped to yore address, which, by the way, is:<br>
+          <div id="receiptaddress">
+            <span class="showname"></span><br>
+            <span id="showaddress"></span><br>
+            <span id="showcity"></span><br>
+            <span id="showstatezip"></span>
           </div>
         </div>
       </div>
