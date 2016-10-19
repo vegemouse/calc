@@ -10,23 +10,64 @@
   </head>
   <body>
     <div class="container">
-      <h1>Calculator</h1>
-      <form id="calculator">
-        <div class="form-group">
-          <label for="firstNumber">1st number</label>
-          <input id="firstNumber" class="form-control" type="text">
+      <div id="calculator-page">
+        <h1>Calculator</h1>
+        <form id="calculator">
+          <div class="form-group">
+            <label for="firstNumber">1st number</label>
+            <input id="firstNumber" class="form-control" type="text">
+          </div>
+          <input class="operator" id="add" type="button" value="+"></input>
+          <input class="operator" id="subtract" type="button" value="-"></input>
+          <input class="operator" id="multiply" type="button" value="*"></input>
+          <input class="operator" id="divide" type="button" value="/"></input>
+          <div class="form-group">
+            <label for="secondNumber">2nd number</label>
+            <input id="secondNumber" class="form-control" type="text">
+          </div>
+          <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <div id="calc-result">
         </div>
-        <input class="operator" id="add" type="button" value="+"></input>
-        <input class="operator" id="subtract" type="button" value="-"></input>
-        <input class="operator" id="multiply" type="button" value="*"></input>
-        <input class="operator" id="divide" type="button" value="/"></input>
-        <div class="form-group">
-          <label for="secondNumber">2nd number</label>
-          <input id="secondNumber" class="form-control" type="text">
+      </div>
+      <div id="cooking-page">
+        <h1>Convert Cooking Measurements</h1>
+        <div id="gallons-to-liters">
+          <form id="cooking-gallons">
+            <div class="form-group">
+              <label for="gallons">Gallons to liters</label>
+              <input id="gallons" class="form-control" type="text">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          <div id="liters">
+
+          </div>
         </div>
-        <button id="submit" type="submit" class="btn btn-primary">Submit</button>
-      </form>
-      <div id="result">
+        <div id="cups-to-tablespoons">
+          <form id="cooking-cups">
+            <div class="form-group">
+              <label for="cups">Cups to tablespoons</label>
+              <input id="cups" class="form-control" type="text">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          <div id="tablespoons">
+
+          </div>
+        </div>
+        <div id="pints-to-ounces">
+          <form id="cooking-pints">
+            <div class="form-group">
+              <label for="gallons">Gallons to liters</label>
+              <input id="gallons" class="form-control" type="text">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          <div id="tablespoons">
+
+          </div>
+        </div>
       </div>
     </div>
   </body>
